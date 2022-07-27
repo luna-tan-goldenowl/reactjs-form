@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container-grid {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-1, 
+.form-2 {
+    align-items: center;
+}
+
+.login-form,
+.signup-form {
+    margin: 10px 0;
+}
+
+.label-form {
+    color: rgb(177, 177, 177);
+    font-weight: 400;
+}
+
+.input-form {
+    width: 280px;
+    height: 26px;
+    margin: 6px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.password-form {
+    position: relative;
+}
+
+.form_icon_eye {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 32px;
+    right: 10px;
+}
+
+.btn_signin {
+    background-color: #078ae5;
+    color: #fff;
+    border: 0;
+    width: 100px;
+    height: 28px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin: 12px 0;
+}
+
+.change {
+    text-decoration: none;
+}
+
+.change_form {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1180px) {
+
+    .container-grid::after {
+        content: "";
+        position: absolute;
+        width: 33%;
+        padding-bottom: 33%;
+        bottom: 0%;
+        left: -16%;
+        border-radius: 20%;
+        transform: rotate(55deg);
+        background-image: linear-gradient(#115ad5, #078ae5);
+    }
+
+    .container-grid::before {
+        content: "";
+        position: absolute;
+        width: 33%;
+        padding-bottom: 33%;
+        top: -18%;
+        right: -15%;
+        border-radius: 20%;
+        transform: rotate(25deg);
+        background-image: linear-gradient(#115ad5, #078ae5);
+    }
+
+}
+
+
+@media screen and (min-width: 390px) and (max-width: 1000px) {
+
+    .container-grid::after {
+        content: "";
+        position: absolute;
+        width: 33%;
+        padding-bottom: 33%;
+        bottom: 0%;
+        left: -16%;
+        border-radius: 20%;
+        transform: rotate(52deg);
+        background-image: linear-gradient(#115ad5, #078ae5);
+    }
+    
+    .container-grid::before {
+        content: "";
+        position: absolute;
+        width: 33%;
+        padding-bottom: 33%;
+        top: -5%;
+        right: -12%;
+        border-radius: 20%;
+        transform: rotate(25deg);
+        background-image: linear-gradient(#115ad5, #078ae5);
+    }
+}
+
+.change-signin {
+    border: none;
+    background-color: #fff;
+    color: blue;
+}
+
+.change-signin:hover {
+    color: red;
+}
